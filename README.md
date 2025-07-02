@@ -125,6 +125,42 @@ server/
 └── index.ts        # Server configuration
 ```
 
+## 🚀 Deployment
+
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Deploy GearNest marketplace"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "GitHub Actions" as the source
+   - The workflow will automatically deploy your site
+
+3. **Manual Deployment**:
+   ```bash
+   npm run deploy
+   ```
+
+### Live Demo
+Once deployed, your site will be available at:
+```
+https://yourusername.github.io/GearNest/
+```
+
+### Custom Domain (Optional)
+To use a custom domain:
+1. Add your domain to `public/CNAME`
+2. Configure your DNS settings
+3. Update the workflow file with your domain
+
 ## 🌟 Key Features in Detail
 
 ### Vehicle Compatibility

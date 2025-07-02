@@ -29,7 +29,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.PROD ? '/GearNest' : '/'}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/marketplace" element={<Index />} />
