@@ -127,9 +127,30 @@ server/
 
 ## 🚀 Deployment
 
-### GitHub Pages
+### Vercel (Recommended)
 
-This project is configured for automatic deployment to GitHub Pages:
+This project is optimized for Vercel deployment:
+
+1. **Deploy to Vercel**:
+   - Visit [vercel.com](https://vercel.com) and sign up
+   - Import your GitHub repository
+   - Click "Deploy" (auto-configured!)
+   - Live in ~30 seconds at `https://your-project.vercel.app`
+
+2. **Local Preview**:
+   ```bash
+   npm run build:vercel
+   ```
+
+3. **Features**:
+   - ✅ Automatic deployments on Git push
+   - ✅ Global CDN for fast loading
+   - ✅ Built-in analytics
+   - ✅ Custom domains supported
+
+### GitHub Pages (Alternative)
+
+This project also supports GitHub Pages:
 
 1. **Push to GitHub**:
    ```bash
@@ -139,7 +160,7 @@ This project is configured for automatic deployment to GitHub Pages:
    ```
 
 2. **Enable GitHub Pages**:
-   - Go to your repository settings
+   - Go to repository settings
    - Navigate to "Pages" section
    - Select "GitHub Actions" as the source
    - The workflow will automatically deploy your site
@@ -150,16 +171,8 @@ This project is configured for automatic deployment to GitHub Pages:
    ```
 
 ### Live Demo
-Once deployed, your site will be available at:
-```
-https://yourusername.github.io/GearNest/
-```
-
-### Custom Domain (Optional)
-To use a custom domain:
-1. Add your domain to `public/CNAME`
-2. Configure your DNS settings
-3. Update the workflow file with your domain
+- **Vercel**: `https://your-project.vercel.app`
+- **GitHub Pages**: `https://username.github.io/GearNest/`
 
 ## 🌟 Key Features in Detail
 
